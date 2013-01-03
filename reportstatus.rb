@@ -24,7 +24,7 @@ mesText += "\nCPU Temperature\t: " + temp.to_s + " Degree Celsius\n"
 mesText +=   "CPU Frequency\t: " + freq.to_s + " MHz\n"
 mesText += "\n\n"
 mesText += "Sended by reportstatus.rb in Raspberry Pi\n"
-mesText += "Sinbei Yoshizaki"
+mesText += "YOUR_NAME"
 
 mail[:from] = 'ADDRESS_FROM'
 mail[:to]   = 'ADDRESS_TO'
