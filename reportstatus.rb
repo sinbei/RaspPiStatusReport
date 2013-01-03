@@ -34,7 +34,7 @@ mail.body = mesText
 smtpserver = Net::SMTP.new('smtp.gmail.com',587)
 smtpserver.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 
-smtpserver.start('gmail.com','YOUR_GMAIL_ACCOUNT','YOUR_GMAIL_ID', :login){|smtp|
+smtpserver.start('gmail.com','YOUR_GMAIL_ACCOUNT','YOUR_GMAIL_PASS', :login){|smtp|
         smtp.send_message(mail.encoded, mail.from, mail.to)
 }
 
