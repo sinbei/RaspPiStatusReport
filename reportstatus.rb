@@ -26,15 +26,18 @@ mesText += "\n\n"
 mesText += "Sended by reportstatus.rb in Raspberry Pi\n"
 mesText += "YOUR_NAME"
 
+
+# Set mail Properties
 mail[:from] = 'ADDRESS_FROM'
 mail[:to]   = 'ADDRESS_TO'
 mail.subject = 'Raspberry Pi Status'
 mail.body = mesText
 
+# Set smtpserver Properties
 smtpserver = Net::SMTP.new('smtp.gmail.com',587)
 smtpserver.enable_tls(OpenSSL::SSL::VERIFY_NONE)
 
+# Send mail
 smtpserver.start('gmail.com','YOUR_GMAIL_ACCOUNT','YOUR_GMAIL_PASS', :login){|smtp|
         smtp.send_message(mail.encoded, mail.from, mail.to)
 }
-
