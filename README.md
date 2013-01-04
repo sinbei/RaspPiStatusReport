@@ -21,6 +21,7 @@ Now, it is available to notify current CPU temperature and current CPU frequency
 
 ## HOW TO USE
 Please Write these infomation into reportstatus.rb.
+
 YOUR_NAME           : Senders' name in mail body
 
 ADDRESS_FROM        : FROM Address.
