@@ -4,41 +4,33 @@ RaspPiStatusReport
 Report Raspberry Pi's Status via Gmail
 
 
-## これはなに
-Gmailを利用してRaspberry Piの現在の状態を通知するスクリプトです。
+## What is This?
+This Script send a Raspberry Pi's status reporting mail via Gmail.
+Now, it is available to notify current CPU temperature and current CPU frequency.
 
-適当にcronなどを用いて定期実行するといいかもしれません。
+## What is Need
 
-今のところ、現在のチップ温度と現在の動作周波数を通知する事が出来ます。
-30分強のやっつけ←
+-Ruby(1.9.3)
+(I've only checked this script in 1.9.3. It may work in 1.8.7)
 
+-RubyGems and its package "mail","tlsmail"
+(Sorry! I didn't make GemFile...)
 
-## ひつようなもの
+## HOW TO USE
+Please Write these infomation into reportstatus.rb.
+YOUR_NAME           : Senders' name in mail body
 
-＊Ruby(1.9.3でのみ動作確認済み)
+ADDRESS_FROM        : FROM Address.
 
-＊RubyGemsでmail,tlsmailをいれたってください
+ADDRESS_TO          : TO Address.
 
-(GemFile書いてませんすみません)
+YOUR_GMAIL_ACCOUNT  : Your Gmail Account Name
 
-
-## 使い方
-
-コード中のアカウント情報を入力してください
-
-YOUR_NAME           : メール本文に記載する送信者名
-
-ADDRESS_FROM        : 送信元アドレス
-
-ADDRESS_TO          : 送信先アドレス
-
-YOUR_GMAIL_ACCOUNT  : 通知メールを送信するGmailアカウントのアカウント名
-
-YOUR_GMAIL_PASS     : 通知メールを送信するGmailアカウントのパスワード
+YOUR_GMAIL_PASS     : Your Gmail Password
 
 
-以上を入力し
+And,just type following command!
 
     $ ruby reportstatus.rb
 
-を実行すればメールが送信されます
+so, status reporting mail will be sent to ADDRESS_TO.
