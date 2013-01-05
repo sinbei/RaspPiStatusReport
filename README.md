@@ -13,7 +13,7 @@ Now, it is available to notify current CPU temperature and current CPU frequency
 
 -Ruby(1.9.3)
 
-(I've checked this script only in 1.9.3, but it may work in 1.8.7)
+*I've checked this script only in 1.9.3, but it may work in 1.8.7
 
 -RubyGems and its package "mail","tlsmail"
 
