@@ -19,7 +19,7 @@ Gmailを利用してRaspberry Piの現在の状態を通知するスクリプト
 
 ＊RubyGemsでmail,tlsmailをいれたってください
 
-(GemFile書いてませんすみません)
+(GemFile書いてくださったtomoariさんありがとうございます)
 
 
 ## 使い方
