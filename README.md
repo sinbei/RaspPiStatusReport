@@ -17,7 +17,8 @@ Now, it is available to notify current CPU temperature and current CPU frequency
 
 -RubyGems and its package "mail","tlsmail"
 
-(Sorry! I didn't make GemFile...)
+* I've just checked this script only on Arch Linux ARM.
+
 
 ## HOW TO USE
 Please Write these infomation into reportstatus.rb.
