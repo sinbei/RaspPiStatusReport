@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'net/smtp'
 
 # Get Raspbarry Pis' status
