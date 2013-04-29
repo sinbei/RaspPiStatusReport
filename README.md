@@ -11,7 +11,7 @@ Now, it is available to notify current CPU temperature and current CPU frequency
 
 ## What is Need
 
--Ruby(1.9.3)
+-Ruby(2.0.0or1.9.3)
 
 * I've checked this script only in 2.0.0
 

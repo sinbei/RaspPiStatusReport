@@ -14,10 +14,11 @@ temp = temp / 1000
 freq = freq / 1000
 
 # Set mail Properties
-fromAddress = 'rasppi.sinbei@gmail.com'
-toAddress   = 'sinbei151@gmail.com'
+fromAddress = 'ADDRESS_FROM'
+toAddress   = 'ADDRESS_TO'
+sender      = 'YOUR_NAME'
+
 subject     = 'Raspberry Pi Status'
-sender      = 'Sinbei Yoshizaki'
 
 MESSAGE = <<EndOfMail
 From: #{sender}'s Raspberry Pi <#{fromAddress}>
@@ -37,6 +38,6 @@ smtpserver = Net::SMTP.new('smtp.gmail.com', 587)
 smtpserver.enable_starttls
 
 # Send mail
-smtpserver.start('gmail.com','rasppi.sinbei','9pvan1r6af', :login){|smtp|
+smtpserver.start('gmail.com','YOUR_GMAIL_ACCOUNT','YOUR_GMAIL_PASS', :login){|smtp|
         smtp.send_message(MESSAGE, fromAddress, toAddress)
 }
